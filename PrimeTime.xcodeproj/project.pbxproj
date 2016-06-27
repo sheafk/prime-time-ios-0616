@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D55491D1BC8520E001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55491C1BC8520E001E3D77 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		4D55491D1BC8520E001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55491C1BC8520E001E3D77 /* Launch Screen.storyboard */; };
+		614AFBB51D1D769200187ED9 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614AFBB41D1D769200187ED9 /* main.storyboard */; };
+		614AFBB81D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614AFBB71D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.m */; };
+		614AFBB91D1DB60700187ED9 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614AFBB41D1D769200187ED9 /* main.storyboard */; };
 		726811FB1923ECC5009F8F37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726811FA1923ECC5009F8F37 /* Foundation.framework */; };
 		726811FD1923ECC5009F8F37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726811FC1923ECC5009F8F37 /* CoreGraphics.framework */; };
 		726811FF1923ECC5009F8F37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726811FE1923ECC5009F8F37 /* UIKit.framework */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		4D55491C1BC8520E001E3D77 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		614AFBB41D1D769200187ED9 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = PrimeTimeTests/main.storyboard; sourceTree = SOURCE_ROOT; };
+		614AFBB61D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPrimeTimeTableViewController.h; sourceTree = "<group>"; };
+		614AFBB71D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPrimeTimeTableViewController.m; sourceTree = "<group>"; };
 		726811F71923ECC5009F8F37 /* PrimeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726811FA1923ECC5009F8F37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		726811FC1923ECC5009F8F37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +128,9 @@
 			children = (
 				726812091923ECC5009F8F37 /* FISAppDelegate.h */,
 				7268120A1923ECC5009F8F37 /* FISAppDelegate.m */,
+				614AFBB41D1D769200187ED9 /* main.storyboard */,
+				614AFBB61D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.h */,
+				614AFBB71D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.m */,
 				7268120C1923ECC5009F8F37 /* Images.xcassets */,
 				4D55491C1BC8520E001E3D77 /* Launch Screen.storyboard */,
 				726812011923ECC5009F8F37 /* Supporting Files */,
@@ -247,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614AFBB91D1DB60700187ED9 /* main.storyboard in Resources */,
 				4D55491D1BC8520E001E3D77 /* Launch Screen.storyboard in Resources */,
 				726812051923ECC5009F8F37 /* InfoPlist.strings in Resources */,
 				7268120D1923ECC5009F8F37 /* Images.xcassets in Resources */,
@@ -258,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7268121E1923ECC5009F8F37 /* InfoPlist.strings in Resources */,
+				614AFBB51D1D769200187ED9 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614AFBB81D1D7C5E00187ED9 /* FISPrimeTimeTableViewController.m in Sources */,
 				726812071923ECC5009F8F37 /* main.m in Sources */,
 				7268120B1923ECC5009F8F37 /* FISAppDelegate.m in Sources */,
 			);
@@ -425,7 +437,7 @@
 				GCC_PREFIX_HEADER = "PrimeTime/PrimeTime-Prefix.pch";
 				INFOPLIST_FILE = "PrimeTime/PrimeTime-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FIS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FIS.PrimeTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,7 +451,7 @@
 				GCC_PREFIX_HEADER = "PrimeTime/PrimeTime-Prefix.pch";
 				INFOPLIST_FILE = "PrimeTime/PrimeTime-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FIS.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FIS.PrimeTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

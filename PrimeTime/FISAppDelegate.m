@@ -12,12 +12,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+- (NSInteger)primeNumber:(NSInteger)prime {
+    
+    NSMutableArray *catchPrimes = [[NSMutableArray alloc]init];
+    
+    BOOL countPrime;
+    for (NSInteger i = 0; [catchPrimes count] == prime; i++) {
+        
+        //        if (i == 0) {
+        //            continue;
+        //        }
+        //        if (i == 1) {
+        //            continue;
+        //        }
+        //        if (i % i == 0) {
+        
+        countPrime = YES;
+        
+        for (NSInteger d = 2; d < i; ++d)
+        {
+            if (i % d == 0)
+                countPrime = NO;
+        }
+        
+        if (countPrime)
+        
+        NSLog(@"%lu ",(unsigned long)i);
+        NSNumber *aPrime = @(i);
+        [catchPrimes addObject:aPrime];
+    }
+    
+    NSInteger answer = [catchPrimes[prime] intValue];
+    
+    return answer;
+}
+
+//when catchPrimes count is equal to prime, break
+
+//RUBY SOLUTION
+//def prime?(num)
+//if num == 0
+//return false
+//elsif num == 1
+//return false
+//else
+//(2...num).each do |divisor|
+//return false if num % divisor == 0
+//end
+//end
+//true
+//end
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

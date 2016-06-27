@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+//- (NSInteger)primeNumber:(NSInteger)prime;
+
 @end
